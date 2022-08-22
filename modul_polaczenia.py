@@ -1,5 +1,6 @@
 import requests
 
+
 def polaczenienie_ze_strona_www_o_adresie(url):
     try:
         strona_www = requests.get(url)

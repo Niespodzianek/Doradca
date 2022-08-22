@@ -3,7 +3,7 @@ import time
 import os
 
 def notowania_live():
-    program_pracuje = 10
+    program_pracuje = 100
     while program_pracuje > 0:
         program_pracuje -= 1
         os.system('clear')
