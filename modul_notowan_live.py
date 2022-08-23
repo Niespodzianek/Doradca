@@ -7,7 +7,7 @@ import os
 
 
 def notowania_live():
-    petla_notowan_live_pracuje = 10
+    petla_notowan_live_pracuje = 100
     while petla_notowan_live_pracuje > 0:
         petla_notowan_live_pracuje -= 1
         os.system("clear")

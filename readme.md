@@ -1,5 +1,6 @@
 <h1>Opis</h1>
-"Doradca" ma służyć do wyświetlania notowań spółek i ich analizy<br>
+"Doradca" ma służyć do wyświetlania kursów indeksów i spółek notowanych na GPW w Warszawie oraz 
+ich analizy.<br><br>
 Aktualne funkcje:
 <li>Wyświetlanie notowań indeksów GPW</li>
 <li>Wyświetlanie notować akcji z wybranego indeksu GPW</li>
