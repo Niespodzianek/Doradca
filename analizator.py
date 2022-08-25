@@ -2,7 +2,6 @@ import random
 import os
 import time
 
-
 def symulacja_sesji_gieldowej(notowania):
     if notowania:
         zmiana_kursu = random.randrange(-10, 10)
@@ -12,7 +11,6 @@ def symulacja_sesji_gieldowej(notowania):
         aktualny_kurs = random.randrange(100, 200)
     print(f"Aktualny kurs: {aktualny_kurs:.2f}")
     return aktualny_kurs
-
 
 def logika(notowania, notowanie):
     if len(notowania) == 0:
@@ -30,7 +28,6 @@ def logika(notowania, notowanie):
             print("Kurs pozostaje bez zmian")
     notowania.append(notowanie)
     return notowania
-
 
 def srednia(srednie, notowania, dlugosc=3):
     if len(notowania) >= dlugosc:
@@ -54,7 +51,6 @@ def srednia(srednie, notowania, dlugosc=3):
                     f"Kurs spadł poniżej średniej z {dlugosc} sesji - SYGNAŁ SPRZEDAŻY"
                 )
     return srednie
-
 
 def logika_srednich(dluzsze_srednie, dluzsza, krotsze_srednie, krotsza):
     if len(dluzsze_srednie) > 2 and len(krotsze_srednie) > 2:
@@ -106,7 +102,6 @@ def logika_srednich(dluzsze_srednie, dluzsza, krotsze_srednie, krotsza):
             print(f"Średnia {krotsza} i średnia {dluzsza} zetknęły się.")
     return 0
 
-
 def program():
     licznik = 0
     notowania = []
@@ -146,7 +141,6 @@ def program():
         if licznik == 35:
             program_pracuje = False
         time.sleep(5)
-
 
 if __name__ == "__main__":
     program()

@@ -28,14 +28,9 @@ if __name__ == '__main__':
                            '(4) - Analiza obserwowanych spółek\n'
                            "(Q/q) - Koniec pracy programu !!!" + "\n")
 
-        # TODO odczyt notowań z pliku
-        # TODO analiza notowań
-
         if wybor_menu == "Q" or wybor_menu == "q":
             program_pracuje = False
         else:
             program(opcja_wyboru_menu=wybor_menu)
             os.system("clear")
     print("KONIEC PROGRAMU")
-
-# TODO w notowaniach live trzeba umieścić oferty kupna i sprzedaży

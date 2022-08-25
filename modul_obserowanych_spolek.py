@@ -84,8 +84,8 @@ def przeszukanie_pojedynczej_spolki_ze_strony_www(analizowany_tekst):
     lista_akcji.append(notowanie)
     for _ in lista_akcji:
         print(
-            f"{spolka} - aktualny kurs: {kurs}, otwarcie: {otwarcie}, maksymalny: {maksimum},"
-            f" minimalny: {minimum}, wolumen: {wolumen}, akcji, obrót; {obrot} zł."
+            f"{spolka} - aktualny kurs: {kurs}, otwarcie: {otwarcie}, maksymalny: {maksimum}, minimalny: {minimum},"
+            f" wolumen: {wolumen}, akcji, obrót; {obrot} zł."
         )
     return
 
