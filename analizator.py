@@ -146,6 +146,5 @@ if __name__ == "__main__":
     program()
 
 #  TODO logika zależności pomiędzy aktualnym kursem a wskaźnikami takimi jak np.:
-#  TODO 1. średnie, EMA
-#  TODO 2. linie Boolingera
-#  TODO 3. wykresy matplotlib
+#  TODO 1. średnie SMA 8, 21, ROC, RSI, linie Boolingera
+#  TODO 2. wykresy matplotlib

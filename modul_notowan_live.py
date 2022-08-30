@@ -7,9 +7,9 @@ import os
 
 
 def notowania_live():
-    petla_notowan_live_pracuje = 10
+    petla_notowan_live_pracuje = 1000
     while petla_notowan_live_pracuje > 0:
         petla_notowan_live_pracuje -= 1
         os.system("clear")
         notowania_obserwowanych_spolki(lista_akcji_z=lista_obserwowanych_spolek)
-        time.sleep(5)
+        time.sleep(15)

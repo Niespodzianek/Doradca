@@ -16,7 +16,7 @@ def program():
             "(1) \tBieżące notowanie obserwowanych spółek\n"
             "(2) \tZbiorcze notowania obserwowanych spółek\n"
             "(3) \tNotowania akcji z wybranych indeksów\n"
-            "(4) \tAnaliza obserwowanych spółek\n"
+            "(4) \tAnaliza obserwowanych spółek - funkcja aktualnie nie działa\n"
             "(Q/q) \tKoniec pracy programu !!!\n"
         )
         # TODO odczyt notowań z pliku
@@ -45,4 +45,7 @@ def program():
 if __name__ == "__main__":
     program()
 
-# TODO w notowaniach live trzeba umieścić oferty kupna i sprzedaży
+# TODO w notowaniach live trzeba umieścić:
+#  1. oferty kupna i sprzedaży,
+#  2. data notowania,
+#  3. notowanie poprzednie.
