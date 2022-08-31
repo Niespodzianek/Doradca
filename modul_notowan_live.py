@@ -1,7 +1,4 @@
-from modul_obserowanych_spolek import (
-    lista_obserwowanych_spolek,
-    notowania_obserwowanych_spolki,
-)
+from modul_obserowanych_spolek import (lista_obserwowanych_spolek, notowania_obserwowanych_spolki)
 import time
 import os
 

@@ -83,15 +83,6 @@ def przeszukanie_pojedynczej_spolki_ze_strony_www(analizowany_tekst):
     notowanie = (spolka, kurs, otwarcie, minimum, maksimum, wolumen, obrot)
     lista_akcji.append(notowanie)
     for _ in lista_akcji:
-        print(
-            f"{spolka} - aktualny kurs: {kurs}, otwarcie: {otwarcie}, maksymalny: {maksimum}, minimalny: {minimum},"
-            f" wolumen: {wolumen}, akcji, obrót; {obrot} zł."
-        )
-    return
+        print(f"{spolka} - aktualny kurs: {kurs}, otwarcie: {otwarcie}, maksymalny: {maksimum}, minimalny: {minimum}, wolumen: {wolumen}, akcji, obrót; {obrot} zł.")
 
-
-lista_obserwowanych_spolek = [
-    "https://www.biznesradar.pl/notowania/CRI#1d_lin_lin",
-    "https://www.biznesradar.pl/notowania/EASYCALL-PL#1d_lin_lin",
-    "https://www.biznesradar.pl/notowania/PZU#1d_lin_lin",
-]
+lista_obserwowanych_spolek = ["https://www.biznesradar.pl/notowania/CRI#1d_lin_lin", "https://www.biznesradar.pl/notowania/EASYCALL-PL#1d_lin_lin"]

@@ -1,16 +1,13 @@
-import random
 import os
 import time
 
-def symulacja_sesji_gieldowej(notowania):
-    if notowania:
-        zmiana_kursu = random.randrange(-10, 10)
-        print(f"Kurs zmienił się o: {zmiana_kursu}%")
-        aktualny_kurs = notowania[-1] + (zmiana_kursu / 100 * notowania[-1])
-    else:
-        aktualny_kurs = random.randrange(100, 200)
-    print(f"Aktualny kurs: {aktualny_kurs:.2f}")
-    return aktualny_kurs
+def wczytanie_pliku_csv():
+    # TODO wczytanie danych z pliku
+    pass
+
+def aktualny_kurs():
+    # TODO pobranie notowania
+    pass
 
 def logika(notowania, notowanie):
     if len(notowania) == 0:
@@ -63,15 +60,14 @@ def logika_srednich(dluzsze_srednie, dluzsza, krotsze_srednie, krotsza):
     return 0
 
 def program():
-    licznik = 0
-    notowania = []
+    # zmienna 'notowania' to lista kursów zamknięcia z pliku csv
+    notowania = wczytanie_pliku_csv()
     srednie_sma_8 = []
     srednie_sma_21 = []
     while True:
         os.system("clear")
-        print(f"Sesja nr: {licznik + 1}")
-        licznik += 1
-        notowanie = symulacja_sesji_gieldowej(notowania)
+        # zmienna 'notowanie' to ostatnie notowanie kursu akcji
+        notowanie = aktualny_kurs()
         notowania = logika(notowania, notowanie)
         srednie_sma_8 = srednia(srednie_sma_8, notowania, dlugosc=8)
         srednie_sma_21 = srednia(srednie_sma_21, notowania, dlugosc=21)
